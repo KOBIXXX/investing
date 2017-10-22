@@ -1,0 +1,138 @@
+{
+  "AgentName": "il.investing.com",
+  "CreatedOn": "22.10.2017, 19:40:45",
+  "CreatedBy": "Advanced Web Scraper - 3.0",
+  "Version": 3,
+  "About": "Scraping agent by https://www.agenty.com",
+  "SourceURL": "https://il.investing.com/indices/ta25-chart",
+  "Collections": [
+    {
+      "Name": "Collection1",
+      "Fields": [
+        {
+          "Name": "Field1",
+          "Selector": "iframe",
+          "Extract": "HTML",
+          "Attribute": null,
+          "Type": "CSS",
+          "From": null,
+          "Visible": true,
+          "CleanTrim": true,
+          "JoinResult": false,
+          "PostProcessing": []
+        }
+      ]
+    }
+  ],
+  "DynamicSelectors": {
+    "Enabled": false,
+    "ListId": null,
+    "Data": []
+  },
+  "Header": {
+    "Method": "GET",
+    "Encoding": "utf-8",
+    "TimeOut": 10,
+    "ReadWriteTimeout": 10,
+    "KeepSameURL": false,
+    "ConnectionAlive": true,
+    "HttpPost": {
+      "Url": null,
+      "PostData": null,
+      "ContentType": "application/x-www-form-urlencoded"
+    },
+    "Data": [
+      {
+        "Key": "Accept",
+        "Value": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+      },
+      {
+        "Key": "User-Agent",
+        "Value": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36"
+      },
+      {
+        "Key": "Accept-Language",
+        "Value": "*"
+      }
+    ]
+  },
+  "Proxy": {
+    "Enabled": false,
+    "Type": null,
+    "Rotate": 0,
+    "Address": null,
+    "UserName": null,
+    "Password": null,
+    "Domain": null,
+    "DynamicField": null
+  },
+  "AutoRedirect": {
+    "Enabled": true,
+    "MaxAutoRedirect": 3
+  },
+  "Throttling": {
+    "Enabled": false,
+    "DelayType": null,
+    "DelaySeconds": 0
+  },
+  "FailRetry": {
+    "Enabled": false,
+    "MaxTryCount": 0,
+    "MaxTryTime": 0,
+    "TryInterval": 0
+  },
+  "Options": {
+    "AlwaysExtract": false
+  },
+  "Login": {
+    "Enabled": false,
+    "AuthenticationType": "FORM",
+    "Data": [],
+    "BasicAuthentication": {
+      "Domain": null,
+      "UserName": null,
+      "Password": null
+    }
+  },
+  "FormSubmit": {
+    "Enabled": false,
+    "Data": []
+  },
+  "RequestViaBrowser": {
+    "Enabled": false,
+    "AjaxEnabled": false,
+    "ImagesEnabled": false,
+    "WaitForAjaxElement": 5
+  },
+  "Pagination": {
+    "Enabled": false,
+    "Type": null,
+    "Selector": null,
+    "PageLimit": 10
+  },
+  "Output": {
+    "Type": null,
+    "Path": null,
+    "FileName": "output.csv",
+    "PostDataOnAbortCancel": false,
+    "IncludeHeader": true
+  },
+  "Input": {
+    "Type": "DIRECT",
+    "Path": null,
+    "FileType": null,
+    "HasHeaders": false,
+    "InlineContent": false,
+    "ConnectAgent": null,
+    "Limit": {
+      "Enabled": false,
+      "StartAt": 0,
+      "StopAt": 0
+    },
+    "Data": [
+      {
+        "COLUMN1": "https://il.investing.com/indices/ta25-chart"
+      }
+    ]
+  }
+}
